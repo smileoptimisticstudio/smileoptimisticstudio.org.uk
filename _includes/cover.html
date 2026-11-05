@@ -1,6 +1,6 @@
 {%- assign it = include.item -%}
 {%- if it.image -%}
-<img loading="lazy" alt="{{ it.image_alt | default: '' | escape }}" src="{{ it.image | relative_url }}">
+<img loading="lazy" alt="{{ it.image_alt | default: '' | escape }}" src="{{ it.image | relative_url }}"{% if it.image_position %} style="object-position:{{ it.image_position }}"{% endif %}>
 {%- else -%}
 <div class="textcover" aria-hidden="true"><span class="tc-brand">Smile Optimistic Studio CIC</span><span class="tc-title">{{ it.cover_text | default: it.title }}</span><span class="tc-line"></span></div>
 {%- endif -%}

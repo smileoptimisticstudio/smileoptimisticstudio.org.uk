@@ -3,7 +3,7 @@ title: "How many times should someone have to explain the same disability?"
 description: "The hidden burden of repeatedly describing support needs."
 category: "Disability and support"
 kind: Essay
-image: "/assets/covers/repeating-disability.png"
+image: "/assets/covers/repeating-disability.webp"
 image_alt: "Painterly illustration of a mother and daughter surrounded by repeated PIP and Work Capability Assessment paperwork, imagining a simpler system for sharing medical evidence with consent."
 date: 2026-11-03 09:01:00
 ---

@@ -4,7 +4,7 @@ description: "Children learn to manage strong feelings with an adult first. In h
 category: "Emotional support in hospital"
 kind: Article
 date: 2026-11-04 09:04:00
-image: "/assets/covers/co-regulation.png"
+image: "/assets/covers/co-regulation.webp"
 image_alt: "Illustrated cover showing a parent and child finding calm together in a hospital setting."
 note: "A personal perspective by Yuliia Barsukova. This article is not clinical advice and does not replace psychological support."
 ---

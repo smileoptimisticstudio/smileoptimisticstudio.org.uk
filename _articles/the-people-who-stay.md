@@ -4,7 +4,7 @@ description: "Cards can always be reprinted. The people who can stay close to th
 category: "Emotional support in hospital"
 kind: Article
 date: 2026-11-04 09:02:00
-image: "/assets/covers/people-who-stay.png"
+image: "/assets/covers/people-who-stay.webp"
 image_alt: "Painterly illustration of two women working together in a creative studio, surrounded by reminders of the children and families they support."
 note: "A personal perspective by Yuliia Barsukova. This article is not clinical advice and does not replace psychological support."
 ---

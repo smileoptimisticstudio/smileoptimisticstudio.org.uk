@@ -4,7 +4,7 @@ description: "We cannot always change the outcome of treatment. We can shape how
 category: "Emotional support in hospital"
 kind: Article
 date: 2026-11-04 09:01:00
-image: "/assets/covers/measuring-joy.png"
+image: "/assets/covers/measuring-joy.webp"
 image_alt: "Painterly illustration exploring the contrast between measurable outcomes and the small, meaningful moments of joy in a child's life."
 note: "A personal perspective by Yuliia Barsukova. This article is not clinical advice and does not replace psychological support."
 ---

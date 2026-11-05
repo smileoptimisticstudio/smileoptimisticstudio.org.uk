@@ -4,6 +4,7 @@ description: "Connecting evidence and everyday life without repeating private me
 category: "Patient experience"
 kind: Essay
 image: "/assets/energy.jpg"
+image_position: "center bottom"
 image_alt: "Illustration about energy and everyday life"
 date: 2026-11-03 09:02:00
 ---

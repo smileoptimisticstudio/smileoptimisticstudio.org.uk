@@ -3,7 +3,7 @@ title: "Sometimes one word tells an entire story"
 description: "A few words can carry an entire experience. Why listening matters."
 category: "Patient experience"
 kind: Essay
-image: "/assets/covers/sometimes-one-word.png"
+image: "/assets/covers/sometimes-one-word.webp"
 image_alt: "Painterly illustration of two mothers sharing a quiet moment in a hospital corridor, surrounded by visual fragments of memories, waiting and unspoken emotions."
 date: 2026-11-03 09:05:00
 ---

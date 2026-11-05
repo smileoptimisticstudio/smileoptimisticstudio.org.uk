@@ -4,7 +4,7 @@ description: "The feeling has every right to exist. The behaviour can still have
 category: "Emotional support in hospital"
 kind: Article
 date: 2026-11-04 09:03:00
-image: "/assets/covers/acknowledging-feelings.png"
+image: "/assets/covers/acknowledging-feelings.webp"
 image_alt: "Illustrated cover showing a parent holding a child with warmth and steady boundaries in a hospital setting."
 note: "A personal perspective by Yuliia Barsukova. This article is not clinical advice and does not replace psychological support."
 ---

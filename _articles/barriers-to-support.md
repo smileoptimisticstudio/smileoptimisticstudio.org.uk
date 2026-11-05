@@ -4,6 +4,7 @@ description: "When support systems become difficult to navigate."
 category: "Disability and support"
 kind: Essay
 image: "/assets/forms.jpg"
+image_position: "center top"
 image_alt: "Illustration of forms and exhaustion"
 date: 2026-11-03 09:03:00
 ---

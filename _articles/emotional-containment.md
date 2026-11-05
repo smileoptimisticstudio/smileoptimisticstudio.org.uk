@@ -2,7 +2,7 @@
 title: "Emotional containment: what it asks of a parent in hospital"
 description: "Not calming a child down — being able to hold their fear without denying it."
 category: "Emotional support in hospital"
-image: "/assets/covers/emotional-containment.png"
+image: "/assets/covers/emotional-containment.webp"
 kind: Article
 date: 2026-11-04 09:05:00
 note: "A personal perspective by Yuliia Barsukova. This article is not clinical advice and does not replace psychological support."
