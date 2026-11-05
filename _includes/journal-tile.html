@@ -1,0 +1,2 @@
+{%- assign j = include.item -%}
+<a class="tile" href="{{ j.url | relative_url }}">{% include cover.html item=j %}<div class="body"><div class="date">{{ j.place }} · {{ j.date | date: '%-d %B %Y' }}</div><h3>{{ j.card_title | default: j.title | escape }}</h3><p>{{ j.description | escape }}</p></div></a>

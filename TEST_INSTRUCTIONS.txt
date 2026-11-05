@@ -1,0 +1,1 @@
+TEST PACKAGE ONLY. Upload contents to new public repository smileoptimisticstudio/sos-preview. Not the production repository. CNAME removed. _config.yml baseurl set to /sos-preview. The HJT instructions menu link goes to the existing live site.

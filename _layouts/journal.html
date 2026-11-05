@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<article class="article"><div class="eyebrow">{{ page.date | date: '%-d %B %Y' }} · {{ page.place }} · {{ page.kind }}</div><h1>{{ page.title | escape }}</h1>
+{% if page.intro %}<p class="intro">{{ page.intro }}</p>{% endif %}
+{% if page.image %}<img alt="{{ page.image_alt | default: page.title | escape }}" class="cover" src="{{ page.image | relative_url }}">{% endif %}
+{{ content }}
+{% if page.gallery %}<div class="gallery">{% for g in page.gallery %}<img alt="{{ g.alt | escape }}" loading="lazy" src="{{ g.src | relative_url }}">{% endfor %}</div>{% endif %}
+{% if page.document %}<div class="callout"><h2>{{ page.document.title }}</h2><p>{{ page.document.text }}</p><a class="btn" href="{{ page.document.link | relative_url }}">{{ page.document.button | default: 'Open' }}</a></div>{% endif %}
+<a class="btn ghost" href="{{ '/studio-journal/' | relative_url }}">Back to Studio Journal</a></article>

@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<article class="article"><div class="eyebrow">{{ page.category | escape }} · {{ page.kind | default: 'Article' }}</div><h1>{{ page.title | escape }}</h1>
+<p class="small">Yuliia Barsukova · Founder, Smile Optimistic Studio CIC</p>
+{% if page.image %}<img class="cover" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}">{% endif %}
+{{ content }}
+<hr><p class="small">{{ page.note | default: "A personal perspective by Yuliia Barsukova. This article is not medical or benefits advice." }}</p>
+<a class="btn ghost" href="{{ '/knowledge/' | relative_url }}">All articles</a></article>

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en-GB"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{% if page.title %}{{ page.title | escape }} | {% endif %}Smile Optimistic Studio CIC</title>
+<meta name="description" content="{{ page.description | default: site.description | strip_html | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta property="og:type" content="website"><meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+<meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+{% if page.image %}<meta property="og:image" content="{{ page.image | absolute_url }}">{% endif %}
+<link rel="icon" type="image/png" href="{{ '/favicon.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
+<link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+</head><body>
+<header class="top"><div class="wrap nav"><a class="brand" href="{{ '/' | relative_url }}"><img class="flower" src="{{ '/assets/marigold.webp' | relative_url }}" alt="" width="43" height="43"><span>Smile Optimistic<br>Studio CIC</span></a><nav class="links"><a href="{{ '/' | relative_url }}">Home</a><a href="{{ '/studio-journal/' | relative_url }}">Studio Journal</a><a href="{{ '/knowledge/' | relative_url }}">Knowledge Hub</a><a href="{{ '/about/' | relative_url }}">Our story</a><a href="{{ '/work-with-us/' | relative_url }}">Work with us</a><a href="{{ '/hospital-joy-toolkit/' | relative_url }}">How to use the cards</a></nav></div></header>
+<main>{{ content }}</main>
+<footer class="footer"><div class="wrap footrow"><span>© Smile Optimistic Studio CIC · Company No. 16897109 · Manchester, UK</span><span><a href="mailto:yuliia@smileoptimisticstudio.org.uk">yuliia@smileoptimisticstudio.org.uk</a></span></div></footer>
+</body></html>

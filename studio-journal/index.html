@@ -1,0 +1,7 @@
+---
+layout: default
+title: "Studio Journal"
+description: "Poster presentations, conference talks and professional activity of Smile Optimistic Studio CIC."
+permalink: "/studio-journal/"
+---
+<div class="wrap"><section class="pagehead"><div class="eyebrow">Professional engagement</div><h1>Studio Journal</h1><p>Where our work meets professional practice: poster presentations, conference talks and ideas shaped through dialogue.</p></section><div class="grid two" style="padding-bottom:80px">{% assign entries = site.journal | sort: 'date' | reverse %}{% for j in entries %}{% include journal-tile.html item=j %}{% endfor %}</div></div>

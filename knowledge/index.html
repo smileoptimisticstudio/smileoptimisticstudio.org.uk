@@ -1,0 +1,11 @@
+---
+layout: default
+title: Knowledge Hub
+description: Writing and perspectives on children, family wellbeing and the lived experience of healthcare.
+permalink: /knowledge/
+---
+<div class="wrap"><section class="pagehead"><div class="eyebrow">Writing · Perspectives · Learning</div><h1>Knowledge Hub</h1><p>Reflections on emotional support, childhood illness, disability and life beyond treatment. Lived-experience perspectives, not clinical guidance.</p></section>
+<div class="grid" style="padding-bottom:80px">
+{% assign ordered = site.articles | sort: 'date' | reverse %}{% for article in ordered %}
+{% include article-tile.html item=article %}
+{% endfor %}</div></div>
