@@ -1,3 +1,63 @@
+
+/* Christmas hero — same layout as homepage teaser */
+.xmas .x-hero {
+  padding: 28px;
+  margin: 28px 0 40px;
+  background: #fff3e3;
+  border-radius: 28px;
+}
+
+.xmas .x-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  align-items: center;
+}
+
+.xmas .x-hero-image {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  border-radius: 18px;
+}
+
+.xmas .x-hero-copy {
+  max-width: none;
+  margin: 0;
+  text-align: left;
+}
+
+.xmas .x-main-title {
+  font-size: clamp(32px, 3.5vw, 54px);
+  letter-spacing: -0.03em;
+}
+
+.xmas .x-intro {
+  margin: 0 0 15px;
+}
+
+.xmas .x-minor {
+  margin: 15px 0 0;
+}
+
+@media (max-width: 760px) {
+  .xmas .x-hero {
+    padding: 16px;
+    margin: 14px 0 28px;
+  }
+
+  .xmas .x-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .xmas .x-main-title {
+    font-size: clamp(30px, 8vw, 42px);
+  }
+}
 <style>
 /* Scoped campaign styling; uses the existing Jekyll default layout and site palette. */
 .xmas{--x-ink:#4d2600;--x-muted:#6c625a;--x-amber:#f69500;--x-cream:#fff3e3;--x-line:#ebdccb;--x-green:#2e6759;color:var(--x-ink)}
@@ -64,16 +124,59 @@
 </style>
 
 <div class="wrap xmas" id="christmas-campaign">
+
 <section class="x-hero" aria-labelledby="christmas-title">
-  <img class="x-hero-image" src="{{ '/assets/christmas-hjt-moment.webp' | relative_url }}" alt="Illustrative Christmas scene: child seen from behind looking at emotional support cards in warm festive light" width="1672" height="941" fetchpriority="high">
-  <div class="x-hero-copy">
-    <div class="x-eyebrow">Smile Optimistic Studio CIC · Christmas 2026</div>
-    <h1 class="x-main-title" id="christmas-title">A Little Joy for Christmas</h1>
-    <p class="x-intro"><strong>This Christmas, give a child a little more comfort.</strong> Help a child feel heard, understood and supported during medical treatment.</p>
-    <p class="x-tagline">One gift today. More support for children tomorrow.</p>
-    <span class="x-price">£25 funds one complete Hospital Joy Toolkit</span>
-    <a class="x-button" href="https://buy.stripe.com/bJe7sL0V60yR47ibBqa7C00" target="_blank" rel="noopener noreferrer">Fund a Toolkit — £25</a>
-    <p class="x-minor">The Christmas offer runs 14 November–27 December 2026, inclusive. Choose 1–99 Toolkits at checkout. We aim to deliver funded Toolkits to approved partner organisations by 31 March 2027.</p>
+  <div class="x-hero-grid">
+
+    <img
+      class="x-hero-image"
+      src="{{ '/assets/christmas-hjt-moment.webp' | relative_url }}"
+      alt="Illustrative Christmas scene featuring Hospital Joy Toolkit cards"
+      width="1672"
+      height="941"
+      fetchpriority="high"
+    >
+
+    <div class="x-hero-copy">
+      <div class="x-eyebrow">
+        CHRISTMAS 2026 · SMILE OPTIMISTIC STUDIO CIC
+      </div>
+
+      <h1 class="x-main-title" id="christmas-title">
+        A Little Joy for Christmas
+      </h1>
+
+      <p class="x-intro">
+        <strong>This Christmas, give a child a little more comfort.</strong>
+        Help a child feel heard, understood and supported during
+        medical treatment.
+      </p>
+
+      <p class="x-tagline">
+        One gift today. More support for children tomorrow.
+      </p>
+
+      <span class="x-price">
+        £25 funds one complete Hospital Joy Toolkit
+      </span>
+
+      <a
+        class="x-button"
+        href="https://buy.stripe.com/bJe7sL0V60yR47ibBqa7C00"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Fund a Toolkit — £25
+      </a>
+
+      <p class="x-minor">
+        The Christmas offer runs 14 November–27 December 2026,
+        inclusive. Choose 1–99 Toolkits at checkout.
+        We aim to deliver funded Toolkits to approved partner
+        organisations by 31 March 2027.
+      </p>
+    </div>
+
   </div>
 </section>
 <section class="x-section x-split" aria-labelledby="what-is-hjt">
