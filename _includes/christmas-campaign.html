@@ -1,3 +1,29 @@
+
+.xmas .x-impact-counter {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.xmas .x-impact-counter h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(19px, 2.2vw, 26px);
+  margin: 0 0 16px;
+}
+
+.xmas .x-impact-counter p {
+  font-size: 13px;
+  color: #6c625a;
+  margin: 10px 0 0;
+}
+
+.xmas .x-impact-counter .x-counter-digits {
+  margin: 12px 0;
+}
+
+.xmas .x-impact-counter .x-digit {
+  width: 35px;
+}
 <style>
 /* Scoped campaign styling; uses the existing Jekyll default layout and site palette. */
 .xmas{--x-ink:#4d2600;--x-muted:#6c625a;--x-amber:#f69500;--x-cream:#fff3e3;--x-line:#ebdccb;--x-green:#2e6759;color:var(--x-ink)}
@@ -175,18 +201,31 @@
   </div>
   <p class="x-smallprint">Delivery to partner organisations may take place after Christmas, with a target of 31 March 2027. Partners arrange distribution to suitable families; we do not claim to track each individual child's use of the cards.</p>
 </section>
+
 <section class="x-section" aria-labelledby="campaign-progress">
- <div class="x-accent" style="text-align:center">
-   <div class="x-eyebrow">Our impact · updated monthly</div>
-   <h2 id="campaign-progress">Hospital Joy Toolkits Delivered</h2>
-   {% assign n = site.data.hjt_impact.delivered_to_partners | default: 0 | plus: 0 %}
-   {% assign padded = n | prepend: '000000' | slice: -6, 6 %}
-   <div class="x-counter-digits" aria-label="{{ n }} Hospital Joy Toolkits confirmed delivered to approved partner organisations">
-      {% assign chars = padded | split: '' %}{% for digit in chars %}<div class="x-digit" aria-hidden="true"><span>{{ digit }}</span></div>{% endfor %}
-   </div>
-   <p class="x-counter-caption"><strong>Toolkits confirmed delivered to approved partner organisations</strong></p>
-   <p class="x-smallprint">This counts confirmed deliveries to organisations, not individual handovers to children. The counter continues beyond Christmas.</p>
- </div>
+  <div class="x-impact-counter">
+
+    <h2 id="campaign-progress">
+      Hospital Joy Toolkits Delivered
+    </h2>
+
+    {% assign n = site.data.hjt_impact.delivered_to_partners | default: 0 | plus: 0 %}
+    {% assign padded = n | prepend: '000000' | slice: -6, 6 %}
+
+    <div class="x-counter-digits"
+         aria-label="{{ n }} Hospital Joy Toolkits delivered to partner organisations">
+      {% assign chars = padded | split: '' %}
+      {% for digit in chars %}
+        <div class="x-digit" aria-hidden="true">
+          <span>{{ digit }}</span>
+        </div>
+      {% endfor %}
+    </div>
+
+    <p>Delivered to partner organisations · Updated monthly</p>
+
+  </div>
+</section>
 </section>
 <section class="x-section" aria-labelledby="partner-enquiries">
  <div class="x-eyebrow">For hospitals, hospices and family-support teams</div>
