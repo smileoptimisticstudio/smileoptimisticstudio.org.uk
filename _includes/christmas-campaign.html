@@ -18,7 +18,18 @@
 .xmas .x-section h2{font-family:Georgia,serif;font-size:clamp(28px,3.5vw,44px);line-height:1.18;letter-spacing:-.035em;margin:10px 0 22px}
 .xmas .x-section p{font-size:17px;line-height:1.7;color:#5c4b3f}
 .xmas .x-split{display:grid;grid-template-columns:.95fr 1.05fr;gap:55px;align-items:center}
-.xmas .x-cover{width:100%;border:1px solid #f0ddc7;border-radius:22px;background:white;padding:10px;box-shadow:0 13px 30px rgba(77,38,0,.055)}
+.xmas img.x-cover {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  aspect-ratio: auto !important;
+  object-fit: contain;
+  border: 1px solid #f0ddc7;
+  border-radius: 22px;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 13px 30px rgba(77,38,0,.055);
+}
 .xmas .x-feature{border-left:4px solid var(--x-amber);padding-left:18px;margin-top:24px;font-weight:800;line-height:1.6}
 .xmas .x-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:29px}
 .xmas .x-step{background:#fff;border:1px solid var(--x-line);border-radius:20px;padding:25px}
