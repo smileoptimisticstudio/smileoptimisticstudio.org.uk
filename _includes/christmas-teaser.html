@@ -1,19 +1,74 @@
+
 <style>
-.xmas-teaser{max-width:1150px;margin:20px auto 40px;padding:20px;background:#fff3e3;border-radius:24px;color:#4d2600}
-.xmas-teaser *{box-sizing:border-box}
-.xmas-teaser-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
-.xmas-teaser img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:15px}
-.xmas-teaser h2{font:700 clamp(30px,4vw,52px)/1.12 Georgia,serif;margin:12px 0}
-.xmas-teaser p{font-size:17px;line-height:1.55}
-.xmas-teaser a{display:inline-block;border-radius:30px;background:#2e6759;color:#fff;text-decoration:none;font-weight:800;padding:13px 26px}
-@media(max-width:760px){.xmas-teaser{margin:10px 14px 30px}.xmas-teaser-grid{grid-template-columns:1fr}}
+.xmas-teaser {
+  max-width: 1150px;
+  margin: 20px auto 40px;
+  padding: 24px;
+  background: #fff3e3;
+  border-radius: 24px;
+  color: #4d2600;
+}
+.xmas-teaser * { box-sizing: border-box; }
+.xmas-teaser img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  border-radius: 16px;
+}
+.xmas-teaser-content {
+  max-width: 850px;
+  margin: 24px auto 4px;
+  text-align: center;
+}
+.xmas-teaser h2 {
+  font: 700 clamp(30px, 4vw, 48px)/1.12 Georgia, serif;
+  margin: 12px 0;
+}
+.xmas-teaser p {
+  font-size: 17px;
+  line-height: 1.55;
+}
+.xmas-teaser a {
+  display: inline-block;
+  border-radius: 30px;
+  background: #2e6759;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 13px 26px;
+  margin-top: 8px;
+}
+@media (max-width: 760px) {
+  .xmas-teaser {
+    margin: 10px 14px 30px;
+    padding: 14px;
+  }
+  .xmas-teaser-content { margin-top: 18px; }
+}
 </style>
+
 <section class="xmas-teaser" aria-labelledby="xmas-teaser-title">
-<div class="xmas-teaser-grid">
-<img src="{{ '/assets/christmas-hjt-moment.webp' | relative_url }}" alt="Illustrative festive scene with a child viewing emotional support cards" width="1672" height="941">
-<div><div style="font-size:12px;letter-spacing:.15em;font-weight:800;text-transform:uppercase;color:#a65c12">Christmas 2026 · Smile Optimistic Studio CIC</div>
-<h2 id="xmas-teaser-title">A Little Joy for Christmas</h2>
-<p><strong>This Christmas, give a child a little more comfort.</strong></p>
-<p>Fund a Hospital Joy Toolkit for children aged 4–6 receiving medical treatment.</p>
-<a href="{{ '/christmas/' | relative_url }}">Learn More</a>
-</div></div></section>
+  <img
+    src="{{ '/assets/christmas-hjt-moment.webp' | relative_url }}"
+    alt="Illustrative festive scene featuring Hospital Joy Toolkit cards"
+    width="1672"
+    height="941"
+  >
+
+  <div class="xmas-teaser-content">
+    <div style="font-size:12px;letter-spacing:.15em;font-weight:800;text-transform:uppercase;color:#a65c12">
+      Christmas 2026 · Smile Optimistic Studio CIC
+    </div>
+
+    <h2 id="xmas-teaser-title">A Little Joy for Christmas</h2>
+
+    <p><strong>This Christmas, give a child a little more comfort.</strong></p>
+
+    <p>Fund a Hospital Joy Toolkit for children aged 4–6 receiving medical treatment.</p>
+
+    <a href="{{ '/christmas/' | relative_url }}">Learn More</a>
+  </div>
+</section>
+
